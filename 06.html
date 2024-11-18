@@ -1,0 +1,52 @@
+<meta charset="UTF-8" />
+<script>
+
+    //ENTRADA
+
+
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    const carro1 = prompt(`Informe o carro para incluir na lista:`);
+    const categoria1 = prompt (`Informe a categoria que o deseja colocar: \n Escolha entre: SUV, Sedan Ou Hatch.`);
+    const carro2 = prompt(`Informe outro carro para incluir na lista:`);
+    const categoria2 = prompt (`Informe a categoria que o deseja colocar:`);
+    const carro3 = prompt(`Informe outro carro para incluir na lista:`);
+    const categoria3 = prompt (`Informe a categoria que o deseja colocar:`);
+
+    //PROCESSAMENTO
+
+    if (categoria1 == "SUV") {
+        carrosSUV.unshift(carro1);
+    } else if (categoria1 == "Sedan") {
+        cassosSedan.unshift(carro1);
+    } else if (categoria1 == "Hatch") {
+        carrosHatch.unshift(carro1);
+    } else {
+        alert(`Resposta inválida!`);
+    }
+
+    if (categoria2 == "SUV") {
+        carrosSUV.unshift(carro2);
+    } else if (categoria2 == "Sedan") {
+        cassosSedan.unshift(carro2);
+    } else if (categoria2 == "Hatch") {
+        carrosHatch.unshift(carro2);
+    } else {
+        alert(`Resposta inválida!`);
+    }
+
+    if (categoria3 == "SUV") {
+        carrosSUV.unshift(carro3);
+    } else if (categoria3 == "Sedan") {
+        cassosSedan.unshift(carro3);
+    } else if (categoria3 == "Hatch") {
+        carrosHatch.unshift(carrosHatch);
+    } else {
+        alert(`Resposta inválida!`);
+    }
+    
+    //SAÍDA
+
+    alert(`${carrosSUV.join(", ")}. \n${cassosSedan.join(", ")}. \n${carrosHatch.join(", ")}.`);
+</script>
