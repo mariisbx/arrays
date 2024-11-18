@@ -10,10 +10,14 @@
 
     //ENTRADA
 
-    let carrosSUV = [Tiggo, Sportage, Tucson, EcoSport];
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const completo = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let adicionar = prompt(`Informe o carro que deseja adicionar:`);
 
     //PROCESSAMENTO
 
+    carrosSUV.push(adicionar);
+    alert(`${completo.join(", ")} \n${carrosSUV.join(", ")}`);
 
     //SAÍDA
 
