@@ -1,0 +1,33 @@
+<script>
+    
+    //ENTRADA
+
+    const numeroum = Number(prompt(`Informe um número:`));
+    const numerodois = Number(prompt(`Informe outro número:`));
+    const numerotres = Number(prompt(`Informe outro número:`));
+    let numero;
+
+    //PROCESSAMENTO
+
+    if (numeroum > numerodois && numeroum > numerotres) {
+        if (numerodois > numerotres)
+        numero = [numeroum, numerodois, numerotres];
+    else if (numerotres > numerodois)
+    numero = [numeroum, numerotres, numerodois];
+    } else if (numerodois > numeroum && numerodois > numerotres) {
+        if (numeroum > numerotres) 
+        numero = [numerodois, numeroum, numerotres];
+    else if (numerotres > numeroum)
+        numero = [numerodois, numerotres, numeroum]; 
+    } else if (numerotres > numeroum && numerotres > numerodois) {
+        if (numeroum > numerodois)
+        numero = [numerotres, numeroum, numerodois];
+        else if (numerodois > numeroum)
+        numero = [numerotres, numerodois, numeroum];
+    } 
+
+
+    //SAÍDA
+
+    document.write(`${numero.join(" - ")}`);
+</script>

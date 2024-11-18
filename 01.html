@@ -1,0 +1,20 @@
+<script>
+
+    //ENTRADA
+
+    const numeroum = Number(prompt(`Informe um número:`));
+    const numerodois = Number(prompt(`Informe outro número:`));
+    let numero;
+
+    //PROCESSAMENTO
+
+    if (numeroum <= numerodois) {
+        numero = [numeroum, numerodois];
+    } else if (numerodois <= numeroum) {
+        numero = [numerodois, numeroum];
+}
+
+    //SAÍDA
+
+    document.write(`${numero.join(" - ")}`);
+</script>
